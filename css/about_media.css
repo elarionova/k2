@@ -1,0 +1,35 @@
+
+@media screen and (max-width: 1000px)
+{
+	p.about
+	{
+		font-size: 130%;
+		margin-top:-20px;
+	}
+}
+
+@media screen and (max-width: 600px)
+{
+	p.about
+	{
+		font-size: 110%;
+	}
+}
+
+@media screen and (max-width: 550px)
+{
+	p.about
+	{
+		font-size: 110%;
+		padding-right: 8%;
+	}
+}
+
+@media screen and (max-width: 450px)
+{
+	p.about
+	{
+		font-size: 100%;
+		padding-right: 10%;
+	}
+}

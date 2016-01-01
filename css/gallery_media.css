@@ -1,0 +1,14 @@
+@media screen and (max-width: 370px)
+{
+	.gallery
+	{
+		width:99%;
+		text-align: left;
+	}
+	.gallery_cell
+	{
+		margin-left: 1%;
+	}
+		
+
+}

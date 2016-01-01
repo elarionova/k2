@@ -1,0 +1,25 @@
+@media screen and (max-width: 750px)
+{
+	.main_links_cell
+	{
+		display:block;
+	}
+	.main_links
+	{
+		width:100%;
+		top:25%;
+		padding: 0;
+		text-align: center;
+	}
+}
+
+
+@media screen and (max-width: 350px)
+{
+	.main_links
+	{
+		padding-left: 5%;
+		text-align: left;
+	}
+
+}

@@ -1,0 +1,12 @@
+@media screen and (max-width: 530px)
+{
+	.search_input
+	{
+		display:none;
+	}
+	.header_cell:last-child:hover .search_hidden_block
+	{
+		right:20px;
+		
+	}
+}

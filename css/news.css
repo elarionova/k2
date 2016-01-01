@@ -1,0 +1,167 @@
+.news_block
+{
+	width: 100%;
+}
+
+.news_block_cell
+{
+	display: inline-block;
+	width:28%;
+	padding: 0% 1%;
+	border-left: 1px solid #6E797D;
+	border-right: 1px solid #6E797D;
+	margin: 0% 1%;
+	vertical-align: top;
+	background-color: rgba(255,255,255,0.4);
+	height:50%;
+	overflow: hidden;
+	cursor: pointer;
+}
+
+.news_block_cell:hover
+{
+	background-color: rgba(255,255,255,0.5);
+}
+div.date 
+{
+	text-align: right;
+	width:100%;
+	font-size: 90%;
+	font-style: italic;
+	font-weight: 400;
+	margin: -10px 0px;
+	color: #6E797D;
+}
+
+
+.news_block_cell>p 
+{
+	font-family: Arial,sans-serif;
+	/*color: #6E797D;*/
+	font-size:100%;
+}
+
+/*iPad in landscape*/
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) { 
+	.news_block_cell
+	{
+		font-size:110%;
+		height:57%;
+	}
+}
+
+/*iPad in portrait*/
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait){
+	.news_block_cell
+	{
+		display: block;
+		width:90%;
+		margin: 1% 1%;
+		height:300px;
+		font-size: 145%;
+	}
+}
+
+
+/*Galaxy Note, Galaxy S5 in landscape*/
+@media only screen and (min-device-width : 360px) and (max-device-width : 640px) and (orientation : landscape) { 
+
+}
+
+/*Galaxy Note, Galaxy S5 in portrait*/
+@media only screen and (min-device-width : 360px) and (max-device-width : 640px) and (orientation : portrait){
+
+}
+
+/*Nexus 5X in landscape*/
+@media only screen and (min-device-width : 411px) and (max-device-width : 731px) and (orientation : landscape) { 
+
+}
+
+/*Nexus 5X in portrait*/
+@media only screen and (min-device-width : 411px) and (max-device-width : 731px) and (orientation : portrait){
+	.news_block_cell
+	{
+		display: block;
+		width:90%;
+		margin: 1% 1%;
+		height:300px;
+		font-size: 200%;
+	}
+}
+
+
+/*iPhone 5 in landscape*/
+@media only screen and (min-device-width : 320px) and (max-device-width : 568px) and (orientation : landscape) { 
+	.news_block
+	{
+		margin-top:-55px;
+	}
+	.news_block_cell
+	{
+		font-size:110%;
+		height:55%;
+	}
+}
+
+/*iPhone 5 in portrait*/
+@media only screen and (min-device-width : 320px) and (max-device-width : 568px) and (orientation : portrait){
+	.news_block_cell
+	{
+		display: block;
+		width:90%;
+		margin: 1% 1%;
+		height:425px;
+		font-size: 200%;
+	}
+}
+
+/*iPhone 6 in landscape*/
+@media only screen and (min-device-width : 375px) and (max-device-width : 667px) and (orientation : landscape) { 
+	.news_block
+	{
+		margin-top:-55px;
+	}
+	.news_block_cell
+	{
+		font-size:110%;
+		height:55%;
+	}
+}
+
+/*iPhone 6 in portrait*/
+@media only screen and (min-device-width : 375px) and (max-device-width : 667px) and (orientation : portrait){
+	.news_block_cell
+	{
+		display: block;
+		width:90%;
+		margin: 1% 1%;
+		height:400px;
+		font-size: 200%;
+	}
+}
+
+/*iPhone 6+ in landscape*/
+@media only screen and (min-device-width : 414px) and (max-device-width : 736px) and (orientation : landscape) { 
+	.news_block
+	{
+		margin-top:-55px;
+	}
+	.news_block_cell
+	{
+		font-size:110%;
+		height:55%;
+	}
+}
+
+/*iPhone 6+ in portrait*/
+@media only screen and (min-device-width : 414px) and (max-device-width : 736px) and (orientation : portrait){
+	.news_block_cell
+	{
+		display: block;
+		width:90%;
+		margin: 1% 1%;
+		height:425px;
+		font-size: 200%;
+	}
+}

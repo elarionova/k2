@@ -1,0 +1,242 @@
+div.turner
+{
+	right:0;
+	width:35px;
+	position:fixed;
+	top:35%;
+	opacity:1;
+	z-index: 1;
+}
+
+div.turner_element
+{
+	height:27px;
+	width:27px;
+	cursor:pointer;
+	padding-top:5px;
+	
+}
+
+
+.turner_element>a
+{
+	display:block;
+	height:27px;
+	width:27px;
+	opacity:0.8;
+	background-position: right;
+	background-image: url("i/ic_checkbox_blank_circle_outline_black_18dp.png");
+	background-repeat: no-repeat;
+	z-index: 1;
+}
+
+
+div.turner_element_active>a
+{
+	display:block;
+	background-position: right;
+	background-image: url("i/ic_checkbox_blank_circle_black_18dp.png");
+	background-repeat: no-repeat;
+	cursor:default;
+	opacity:1;
+	z-index: 1;
+}
+
+div.turner_element:hover
+{
+	opacity:1;
+}
+
+/*iPad in landscape*/
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) { 
+
+}
+
+/*iPad in portrait*/
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait){
+	div.turner
+	{
+		right:12;
+	}
+	div.turner_element
+	{
+		height:35px;
+		width:35px;
+		padding-top:10px;
+	}
+
+	.turner_element>a
+	{
+		height:35px;
+		width:35px;
+		background-image: url("i/ic_checkbox_blank_circle_outline_black_24dp.png");
+	}
+
+	div.turner_element_active>a
+	{
+		background-image: url("i/ic_checkbox_blank_circle_black_24dp.png");
+	}
+
+}
+
+
+/*Galaxy Note, Galaxy S5 in landscape*/
+@media only screen and (min-device-width : 360px) and (max-device-width : 640px) and (orientation : landscape) { 
+
+}
+
+/*Galaxy Note, Galaxy S5 in portrait*/
+@media only screen and (min-device-width : 360px) and (max-device-width : 640px) and (orientation : portrait){
+	div.turner
+	{
+		right:12;
+	}
+	div.turner_element
+	{
+		height:35px;
+		width:35px;
+		padding-top:10px;
+	}
+
+	.turner_element>a
+	{
+		height:35px;
+		width:35px;
+		background-image: url("i/ic_checkbox_blank_circle_outline_black_24dp.png");
+	}
+
+	div.turner_element_active>a
+	{
+		background-image: url("i/ic_checkbox_blank_circle_black_24dp.png");
+	}
+
+}
+
+/*Nexus 5X in landscape*/
+@media only screen and (min-device-width : 411px) and (max-device-width : 731px) and (orientation : landscape) { 
+
+}
+
+/*Nexus 5X in portrait*/
+@media only screen and (min-device-width : 411px) and (max-device-width : 731px) and (orientation : portrait){
+	div.turner
+	{
+		right:12;
+	}
+	div.turner_element
+	{
+		height:35px;
+		width:35px;
+		padding-top:10px;
+	}
+
+	.turner_element>a
+	{
+		height:35px;
+		width:35px;
+		background-image: url("i/ic_checkbox_blank_circle_outline_black_24dp.png");
+	}
+
+	div.turner_element_active>a
+	{
+		background-image: url("i/ic_checkbox_blank_circle_black_24dp.png");
+	}
+
+}
+
+
+/*iPhone 5 in landscape*/
+@media only screen and (min-device-width : 320px) and (max-device-width : 568px) and (orientation : landscape) { 
+
+}
+
+/*iPhone 5 in portrait*/
+@media only screen and (min-device-width : 320px) and (max-device-width : 568px) and (orientation : portrait){
+	div.turner
+	{
+		right:12;
+	}
+	div.turner_element
+	{
+		height:35px;
+		width:35px;
+		padding-top:10px;
+	}
+
+	.turner_element>a
+	{
+		height:35px;
+		width:35px;
+		background-image: url("i/ic_checkbox_blank_circle_outline_black_24dp.png");
+	}
+
+	div.turner_element_active>a
+	{
+		background-image: url("i/ic_checkbox_blank_circle_black_24dp.png");
+	}
+
+}
+
+/*iPhone 6 in landscape*/
+@media only screen and (min-device-width : 375px) and (max-device-width : 667px) and (orientation : landscape) { 
+
+}
+
+/*iPhone 6 in portrait*/
+@media only screen and (min-device-width : 375px) and (max-device-width : 667px) and (orientation : portrait){
+	div.turner
+	{
+		right:12;
+	}
+	div.turner_element
+	{
+		height:35px;
+		width:35px;
+		padding-top:10px;
+	}
+
+	.turner_element>a
+	{
+		height:35px;
+		width:35px;
+		background-image: url("i/ic_checkbox_blank_circle_outline_black_24dp.png");
+	}
+
+	div.turner_element_active>a
+	{
+		background-image: url("i/ic_checkbox_blank_circle_black_24dp.png");
+	}
+
+}
+
+/*iPhone 6+ in landscape*/
+@media only screen and (min-device-width : 414px) and (max-device-width : 736px) and (orientation : landscape) { 
+
+}
+
+/*iPhone 6+ in portrait*/
+@media only screen and (min-device-width : 414px) and (max-device-width : 736px) and (orientation : portrait){
+	div.turner
+	{
+		right:12;
+	}
+	div.turner_element
+	{
+		height:35px;
+		width:35px;
+		padding-top:10px;
+	}
+
+	.turner_element>a
+	{
+		height:35px;
+		width:35px;
+		background-image: url("i/ic_checkbox_blank_circle_outline_black_24dp.png");
+	}
+
+	div.turner_element_active>a
+	{
+		background-image: url("i/ic_checkbox_blank_circle_black_24dp.png");
+	}
+
+}

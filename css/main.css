@@ -1,0 +1,30 @@
+.main_links
+{
+	position:relative;
+	width:87%;
+	top:35%;
+	padding: 0 10% 0 3%;
+	text-align: justify;
+}
+
+.main_links_cell
+{
+	display:inline-block;
+}
+.main_links_cell>a
+{
+	font-size: 400%;
+	color: #000000;
+	font-weight: 300;
+}
+.main_links_cell>a:hover
+{
+	color: #6E797D;	
+}
+
+.main_links:after
+{
+	content:"";
+	display: inline-block;
+	width:100%;
+}

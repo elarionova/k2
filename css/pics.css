@@ -1,0 +1,12 @@
+.main, .main4, .main5, .main6
+{
+	background-image: url("i/fon.jpg");
+	opacity:1;
+/*	background-color: #efefef;*/
+}
+
+.main2, .main3
+{
+	background-image: url("i/fon.jpg");
+	
+}

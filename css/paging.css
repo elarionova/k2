@@ -1,0 +1,43 @@
+.paging
+{
+	width:100%;
+	text-align: center;
+	margin-top:1%;
+}
+
+.paging_cell
+{
+	display:inline-block;
+	height:27px;
+	width:27px;
+	cursor:pointer;
+	padding-right:5px;
+}
+
+.paging_cell>a
+{
+	display:block;
+	height:27px;
+	width:27px;
+	opacity:0.8;
+	background-position: right;
+	background-image: url("i/ic_checkbox_blank_circle_outline_black_18dp.png");
+	background-repeat: no-repeat;
+
+}
+
+
+div.paging_cell_active>a
+{
+	display:block;
+	background-position: right;
+	background-image: url("i/ic_checkbox_blank_circle_black_18dp.png");
+	background-repeat: no-repeat;
+	cursor:default;
+	opacity:1;
+}
+
+div.paging_cell:hover
+{
+	opacity:1;
+}
