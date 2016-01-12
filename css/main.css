@@ -1,10 +1,26 @@
-.main_links
+.main_logo
 {
 	position:relative;
+	width:66%;
+	top:170px;
+	text-align: center;
+	padding: 0px 17%;
+}
+.main_logo>img
+{
+	width:100%;
+}
+
+.main_links
+{
+	/*position:relative;*/
 	width:87%;
-	top:35%;
+	/*top:35%;*/
 	padding: 0 10% 0 3%;
 	text-align: justify;
+
+	bottom:70px;
+	position:absolute;
 }
 
 .main_links_cell
@@ -13,13 +29,15 @@
 }
 .main_links_cell>a
 {
-	font-size: 400%;
-	color: #000000;
+	font-size: 270%;
+	
+	color: #6E797D;	
+	/*color:#000000;*/
 	font-weight: 300;
 }
 .main_links_cell>a:hover
 {
-	color: #6E797D;	
+	color: #46A5E5;
 }
 
 .main_links:after

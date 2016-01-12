@@ -45,16 +45,20 @@
 
 .footer_cell:last-child:hover .feedback
 {
+	opacity:1;
+	transition: opacity 0.3s linear;
 	right:50px;
 }
 
-.feedback
+div.feedback
 {
 	bottom:0px;
 	position:absolute;
-	right:-999999px;
-	z-index: 999;
+	right:-9999px;
+	z-index: -1;
 	font-size: 150%;
+	opacity:0;
+	transition: opacity 0.3s linear;
 }
 .feedback>input
 {

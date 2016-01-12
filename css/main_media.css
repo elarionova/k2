@@ -1,3 +1,4 @@
+/*
 @media screen and (max-width: 750px)
 {
 	.main_links_cell
@@ -20,6 +21,31 @@
 	{
 		padding-left: 5%;
 		text-align: left;
+	}
+
+}
+*/
+
+@media screen and (max-width: 530px)
+{
+	.main_links_cell
+	{
+		display:block;
+	}
+	.main_logo
+	{
+		padding:0 5%;
+		top:120px;
+		width:90%;
+	}
+	.main_links
+	{
+		width:100%;
+		padding: 0;
+		text-align: center;
+		position: relative;
+		bottom:0;
+		margin-top: 200px;
 	}
 
 }
