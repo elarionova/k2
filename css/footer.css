@@ -14,8 +14,9 @@
 .footer_wrapper
 {
 	text-align: justify;
-	width:80%;
-	margin: 10px 10%;
+	width:95%;
+	margin: 10px 2%;
+	/*white-space:nowrap;*/
 }
 .footer_cell
 {
@@ -46,7 +47,7 @@
 .footer_cell:last-child:hover .feedback
 {
 	opacity:1;
-	transition: opacity 0.3s linear;
+	transition: opacity 0.5s linear;
 	right:50px;
 }
 
@@ -58,7 +59,7 @@ div.feedback
 	z-index: -1;
 	font-size: 150%;
 	opacity:0;
-	transition: opacity 0.3s linear;
+	transition: opacity 0.5s linear;
 }
 .feedback>input
 {
@@ -99,6 +100,18 @@ textarea[name="user_message"]::-moz-placeholder
     
 }
 
+div.sm_icon
+{
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 10px;
+	font-size: 20px;
+}
+
+div.sm_icon:last-child
+{
+	margin-right: 0px;
+}
 
 /*iPad in portrait*/
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait){

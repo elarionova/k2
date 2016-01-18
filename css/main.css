@@ -1,10 +1,15 @@
 .main_logo
 {
-	position:relative;
-	width:66%;
-	top:170px;
-	text-align: center;
-	padding: 0px 17%;
+	
+	position:absolute;
+	width:70%;
+	height: 40%;
+	top:0;
+	bottom:0;
+	left:0;
+	right:0;
+	margin:auto;
+
 }
 .main_logo>img
 {
@@ -13,12 +18,9 @@
 
 .main_links
 {
-	/*position:relative;*/
 	width:87%;
-	/*top:35%;*/
 	padding: 0 10% 0 3%;
 	text-align: justify;
-
 	bottom:70px;
 	position:absolute;
 }
@@ -30,9 +32,7 @@
 .main_links_cell>a
 {
 	font-size: 270%;
-	
 	color: #6E797D;	
-	/*color:#000000;*/
 	font-weight: 300;
 }
 .main_links_cell>a:hover
@@ -45,4 +45,109 @@
 	content:"";
 	display: inline-block;
 	width:100%;
+}
+
+
+
+/*iPad in landscape*/
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) { 
+	div.main_logo
+	{
+		height:35%;
+	}
+}
+
+/*iPad in portrait*/
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait){
+	div.main_logo
+	{
+		height:30%;
+		width:80%;
+	}
+	div.main_links
+	{
+		bottom: 110px;
+	}
+	div.main_links_cell>a 
+	{
+    	font-size: 300%;
+	}
+}
+
+
+
+/*iPhone 5 in landscape*/
+@media only screen and (min-device-width : 320px) and (max-device-width : 568px) and (orientation : landscape) { 
+	div.main_logo
+	{
+		height:35%;
+	}
+}
+
+/*iPhone 5 in portrait*/
+@media only screen and (min-device-width : 320px) and (max-device-width : 568px) and (orientation : portrait){
+	div.main_logo
+	{
+		height:30%;
+		width:80%;
+	}
+	div.main_links
+	{
+		bottom: 110px;
+	}
+	div.main_links_cell>a 
+	{
+    	font-size: 370%;
+	}
+}
+
+/*iPhone 6 in landscape*/
+@media only screen and (min-device-width : 375px) and (max-device-width : 667px) and (orientation : landscape) { 
+	div.main_logo
+	{
+		height:35%;
+	}
+}
+
+/*iPhone 6 in portrait*/
+@media only screen and (min-device-width : 375px) and (max-device-width : 667px) and (orientation : portrait){
+	div.main_logo
+	{
+		height:30%;
+		width:80%;
+	}
+	div.main_links
+	{
+		bottom: 110px;
+	}
+	div.main_links_cell>a 
+	{
+    	font-size: 370%;
+	}
+
+}
+
+/*iPhone 6+ in landscape*/
+@media only screen and (min-device-width : 414px) and (max-device-width : 736px) and (orientation : landscape) { 
+	div.main_logo
+	{
+		height:35%;
+	}
+}
+
+/*iPhone 6+ in portrait*/
+@media only screen and (min-device-width : 414px) and (max-device-width : 736px) and (orientation : portrait){
+	div.main_logo
+	{
+		height:30%;
+		width:80%;
+	}
+	div.main_links
+	{
+		bottom: 110px;
+	}
+	div.main_links_cell>a 
+	{
+    	font-size: 370%;
+	}
 }
