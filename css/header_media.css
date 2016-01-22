@@ -1,12 +1,31 @@
-@media (max-width: 530px)
+@media (max-width: 450px), (max-device-width: 1023px) and (orientation : portrait)
 {
-	.search_input
+	.search_input>input
 	{
-		display:none;
+		width:100px;
 	}
+	.header
+	{
+		padding:0;
+	}
+	.header_cell
+	{
+		margin-right: 5px;
+	}
+	div.login_hidden_block
+	{
+		right:120px;
+	}
+	div.login_block
+	{
+		width:250px;
+	}
+}
+/*
 	.header_cell:last-child:hover .search_hidden_block
 	{
 		right:20px;
 		
 	}
 }
+*/

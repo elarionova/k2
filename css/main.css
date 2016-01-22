@@ -1,7 +1,7 @@
-.main_logo
+div.main_logo
 {
 	
-	position:absolute;
+	/*position:absolute;
 	width:70%;
 	height: 40%;
 	top:0;
@@ -9,11 +9,22 @@
 	left:0;
 	right:0;
 	margin:auto;
+	*/
+}
+.main_logo_
+{
+
+	width: calc(100% - 50px);
+	height:70%;
+	background-image: url("i/matcat_logo.png");
+	background-repeat: no-repeat;
+	background-size: 80%;
+	background-position: center;
 
 }
-.main_logo>img
+.main_logo_>img
 {
-	width:100%;
+	width:87%;
 }
 
 .main_links
@@ -23,6 +34,8 @@
 	text-align: justify;
 	bottom:70px;
 	position:absolute;
+	
+	
 }
 
 .main_links_cell

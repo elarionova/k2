@@ -2,22 +2,23 @@
 	<head>
 		<link href='https://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,900italic,900,700italic,700,500italic,500,400italic' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" type="text/css" href="css/common.css">
-		<link rel="stylesheet" type="text/css" href="css/common_media.css">
 		<link rel="stylesheet" type="text/css" href="css/pics.css">
 		<link rel="stylesheet" type="text/css" href="css/main.css">
-		<link rel="stylesheet" type="text/css" href="css/main_media.css">
 		<link rel="stylesheet" type="text/css" href="css/turner.css">
 		<link rel="stylesheet" type="text/css" href="css/footer.css">
 		<link rel="stylesheet" type="text/css" href="css/header.css">
-		<link rel="stylesheet" type="text/css" href="css/header_media.css">
 		<link rel="stylesheet" type="text/css" href="css/news.css">
-		<link rel="stylesheet" type="text/css" href="css/news_media.css">
 		<link rel="stylesheet" type="text/css" href="css/gallery.css">
-		<link rel="stylesheet" type="text/css" href="css/gallery_media.css">
 		<link rel="stylesheet" type="text/css" href="css/paging.css">
 		<link rel="stylesheet" type="text/css" href="css/about.css">
-		<link rel="stylesheet" type="text/css" href="css/about_media.css">
 		<link rel="stylesheet" type="text/css" href="css/news_detail.css">
+		<link rel="stylesheet" type="text/css" href="css/common_media.css">
+		<link rel="stylesheet" type="text/css" href="css/main_media.css">
+		<link rel="stylesheet" type="text/css" href="css/header_media.css">
+		<link rel="stylesheet" type="text/css" href="css/news_media.css">
+		<link rel="stylesheet" type="text/css" href="css/gallery_media.css">
+		<link rel="stylesheet" type="text/css" href="css/about_media.css">
+		
 
 		<link rel="shortcut icon" href="css/i/favicon.ico" type="image/x-icon">
 		<title>MatCat</title>
@@ -49,9 +50,33 @@
 						<img src="css/i/ic_account_black_18dp.png">
 					</a>
 				</div>
-				<div class="header_cell">
-					<a href="#">
+				<div class="header_cell login_icon">
 						<img src="css/i/ic_logout_black_18dp.png">
+						<div class="login_hidden_block">
+							<div class="login_block">
+								<div class"login_controll">
+									<div class="login_controll_cell">Login</div><div class="login_controll_cell login_controll_cell_active">Sign up</div>
+								</div>
+								<div class="signin_block">
+									<input name="email" placeholder="Type your email"></input>
+									<a href="#">Send link</a>
+									<div class="login_notification">
+										Check your email and follow the link to activate your account!
+									</div>
+								</div>
+								<div class="signup_block">
+									<input name="email" placeholder="Type your email" class="signup_input"></input>
+									<input name="name" placeholder="Type your name"></input>
+									<br />
+									<input type="checkbox" id="subscribtion" class="signup_checkbox"></input>
+									<label for="subscribtion" class="signup_label">Ready to get mails</label>
+									<a class="signup_link" href="#">Send link</a>
+									<div class="login_notification">
+										Check your email and follow the link to activate your account!
+									</div>
+								</div>
+							</div><!--login_block-->
+						</div>
 					</a>
 				</div>
 				<div class="header_cell search_input">
@@ -73,19 +98,39 @@
 				</div>
 				<div class="header_cell">
 					<a href="#">
-						<img src="css/i/ic_facebook_black_36dp.png">
+						<img src="css/i/ic_account_black_36dp.png">
 					</a>
 				</div>
-				<div class="header_cell">
-				<a href="#">
-						<img src="css/i/ic_vk_black_36dp.png">
+				<div class="header_cell login_icon">
+						<img src="css/i/ic_logout_black_36dp.png">
+						<div class="login_hidden_block">
+							<div class="login_block">
+								<div class"login_controll">
+									<div class="login_controll_cell">Login</div><div class="login_controll_cell login_controll_cell_active">Sign up</div>
+								</div>
+								<div class="signin_block">
+									<input name="email" placeholder="Type your email"></input>
+									<a href="#">Send link</a>
+									<div class="login_notification">
+										Check your email and follow the link to activate your account!
+									</div>
+								</div>
+								<div class="signup_block">
+									<input name="email" placeholder="Type your email" class="signup_input"></input>
+									<input name="name" placeholder="Type your name"></input>
+									<br />
+									<input type="checkbox" id="subscribtion" class="signup_checkbox"></input>
+									<label for="subscribtion" class="signup_label">Ready to get mails</label>
+									<a class="signup_link" href="#">Send link</a>
+									<div class="login_notification">
+										Check your email and follow the link to activate your account!
+									</div>
+								</div>
+							</div><!--login_block-->
+						</div>
 					</a>
 				</div>
-				<div class="header_cell">
-					<a href="#">
-						<img src="css/i/ic_twitter_black_36dp.png">
-					</a>
-				</div>
+
 				<div class="header_cell search_input">
 					<input type="text" name="search">
 				</div>
@@ -125,8 +170,8 @@
 
 
 			<div class="content main" id="main">
-				<div class="main_logo">
-					<img src="css/i/matcat_logo.png">
+				<div class="main_logo_">
+					<!--<img src="css/i/matcat_logo.png">-->
 				</div>
 				<div class="main_links">
 					<div class="main_links_cell">
@@ -306,11 +351,13 @@
 					<div class="footer_cell footer_cell_active">About</div>
 					<div class="footer_cell">Blog</div>
 					<div class="footer_cell">
-						<div class="feedback">
-							<input type="text" placeholder="Email" name="user_email">
-							<textarea type="text" placeholder="Type your message" name="user_message"rows=10></textarea>
-							<div class="button">Send</div>
-						</div>
+						<div class="feedback_wrapper">
+							<div class="feedback">
+								<input type="text" placeholder="Email" name="user_email">
+								<textarea type="text" placeholder="Type your message" name="user_message"rows=10></textarea>
+								<div class="button">Send</div>
+							</div>
+						</div><!--feedback_wrapper-->
 						Feedback
 					</div>
 				</div><!--footer_wrapper-->

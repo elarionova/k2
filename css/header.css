@@ -64,6 +64,136 @@ img.header_logo
 	margin-top:50px;
 }
 
+
+
+div.login_hidden_block
+{
+	width:50px;
+	position:absolute;
+	right:250px;
+	top:-1000;
+	opacity:0;
+	transition: opacity 0.5s linear;
+	height:60px;
+
+
+}
+
+.login_icon
+{
+	cursor:pointer;
+}
+
+.login_icon:hover div.login_hidden_block
+{
+	top:0px;
+	opacity: 1;
+	transition: opacity 0.5s linear;
+}
+
+div.login_block
+{
+	position: absolute;
+	right: -100px;
+	top:40px;
+	/*border-radius: 5px;*/
+	border: 1px solid #000000;
+	width:300px;
+	background-color: rgba(255,255,255,1);
+	z-index:100;
+	text-align: left;
+	
+}
+
+div.login_controll
+{
+	width:100%;
+	position: relative;
+}
+
+div.login_controll_cell
+{
+	display: inline-block;
+	width:calc(50% - 1px);
+	text-align:center;
+	padding: 5px 0px;
+	/*border-radius: 5px 5px 0px 0px;*/
+	border-right: 1px solid #000000;
+	border-bottom: 1px solid #000000;
+	background-color: #efefef;
+	cursor:pointer;
+}
+div.login_controll_cell:last-child
+{
+	border-right: none;
+}
+
+div.login_controll_cell_active
+{
+	border-bottom:none;
+	background-color: #ffffff;
+	font-weight: bold
+}
+
+div.signin_block
+{
+	display: none;
+	width: 96%;
+	padding: 5px 2%;
+}
+
+div.signup_block
+{
+	display:block;
+	width: 96%;
+	padding: 5px 2%;
+}
+
+div.login_notification
+{
+	text-align: left;
+	width:inherit;
+	padding: inherit;	
+}
+
+input.signup_checkbox
+{
+	width: auto;
+
+}
+input.signup_input
+{
+	margin-bottom: 5px;
+}
+
+a.signup_link
+{
+	display:block;
+	text-align: center;
+	padding: 10px 0px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*iPad in landscape*/
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) { 
 	.header

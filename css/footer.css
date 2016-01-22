@@ -44,22 +44,37 @@
 	display: inline-block;
 }
 
-.footer_cell:last-child:hover .feedback
+.footer_cell:last-child:hover .feedback_wrapper
 {
 	opacity:1;
 	transition: opacity 0.5s linear;
 	right:50px;
 }
-
-div.feedback
+div.feedback_wrapper
 {
 	bottom:0px;
 	position:absolute;
 	right:-9999px;
-	z-index: -1;
-	font-size: 150%;
+	z-index: 1;
 	opacity:0;
 	transition: opacity 0.5s linear;
+	width:200px;
+	height:150px;
+
+}
+div.feedback
+{
+	position:absolute;
+	font-size: 150%;
+	right:0;
+	bottom:5;
+	/*bottom:0px;
+	right:-9999px;
+	z-index: -1;
+
+	opacity:0;
+	transition: opacity 0.5s linear;
+*/	
 }
 .feedback>input
 {
@@ -136,7 +151,7 @@ div.sm_icon:last-child
 	.feedback
 	{
 		bottom:0px;
-		position:absolute;
+		position:relative;
 		right:-999999px;
 		z-index: 999;
 		font-size: 200%;
