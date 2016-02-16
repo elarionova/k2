@@ -1,15 +1,54 @@
+.header_wrapper
+{
+	width: 100%;
+	height:100px;
+	background-image: url("i/background1.png");
+	-webkit-filter: blur(10px);
+	top:-20;
+	position: fixed;
+
+}
 .header
 {
-	top:20px;
+	top:0px;
 	width: calc(100% - 20px);
 	text-align: right;
 	position:fixed;
-	padding: 0 10px;
+	padding: 20 10 0 10;
+
 
 }
 .header_mobile
 {
 	display:none;
+}
+
+
+.for_logo
+{
+	float:left;
+}
+
+.long_logo
+{
+	display:inline-block;
+}
+
+.short_logo
+{
+	display: none;
+}
+
+
+
+.user_name
+{
+	display:inline-block;
+	margin-left: -10px;
+	overflow:hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	max-width:200px;
 }
 
 .header_cell
@@ -77,6 +116,7 @@ div.login_hidden_block
 	height:60px;
 
 
+
 }
 
 .login_icon
@@ -95,7 +135,7 @@ div.login_block
 {
 	position: absolute;
 	right: -100px;
-	top:40px;
+	top:50px;
 	/*border-radius: 5px;*/
 	border: 1px solid #000000;
 	width:300px;
@@ -194,220 +234,3 @@ a.signup_link
 
 
 
-/*iPad in landscape*/
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) { 
-	.header
-	{
-		display:none;
-	}
-	.header_mobile
-	{
-		top:20px;
-		width: calc(100% - 20px);
-		text-align: right;
-		position:fixed;
-		padding: 0 10px;
-		display:block;
-	}
-	.header_cell
-	{
-		font-size: 28px;
-	}
-}
-
-/*iPad in portrait*/
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait){
-	.header
-	{
-		display:none;
-	}
-	.header_mobile
-	{
-		top:20px;
-		width: calc(100% - 20px);
-		text-align: right;
-		position:fixed;
-		padding: 0 10px;
-		display:block;
-
-	}
-	.header_cell
-	{
-		font-size: 35px;
-	}
-	.header_cell > input
-	{
-		width: 350px;
-	}
-}
-
-
-/*Galaxy Note, Galaxy S5 in landscape*/
-@media only screen and (min-device-width : 360px) and (max-device-width : 640px) and (orientation : landscape) { 
-
-	.header_cell
-	{
-		font-size: 28px;
-	}
-}
-
-/*Galaxy Note, Galaxy S5 in portrait*/
-@media only screen and (min-device-width : 360px) and (max-device-width : 640px) and (orientation : portrait){
-	.header
-	{
-		display:none;
-	}
-	.header_mobile
-	{
-		top:20px;
-		width: calc(100% - 20px);
-		text-align: right;
-		position:fixed;
-		padding: 0 10px;
-		display:block;
-
-	}
-	.header_cell
-	{
-		font-size: 35px;
-	}
-	.header_cell > input
-	{
-		width: 350px;
-	}
-}
-
-/*Nexus 5X in landscape*/
-@media only screen and (min-device-width : 411px) and (max-device-width : 731px) and (orientation : landscape) { 
-	
-	.header_cell
-	{
-		font-size: 28px;
-	}
-}
-
-/*Nexus 5X in portrait*/
-@media only screen and (min-device-width : 411px) and (max-device-width : 731px) and (orientation : portrait){
-	.header
-	{
-		display:none;
-	}
-	.header_mobile
-	{
-		top:20px;
-		width: calc(100% - 20px);
-		text-align: right;
-		position:fixed;
-		padding: 0 10px;
-		display:block;
-
-	}
-	.header_cell
-	{
-		font-size: 35px;
-	}
-	.header_cell > input
-	{
-		width: 350px;
-	}
-}
-
-
-/*iPhone 5 in landscape*/
-@media only screen and (min-device-width : 320px) and (max-device-width : 568px) and (orientation : landscape) { 
-	.header_cell
-	{
-		font-size: 28px;
-	}
-}
-
-/*iPhone 5 in portrait*/
-@media only screen and (min-device-width : 320px) and (max-device-width : 568px) and (orientation : portrait){
-	.header
-	{
-		display:none;
-	}
-	.header_mobile
-	{
-		top:20px;
-		width: calc(100% - 20px);
-		text-align: right;
-		position:fixed;
-		padding: 0 10px;
-		display:block;
-
-	}
-	.header_cell
-	{
-		font-size: 35px;
-	}
-	.header_cell > input
-	{
-		width: 350px;
-	}
-}
-
-/*iPhone 6 in landscape*/
-@media only screen and (min-device-width : 375px) and (max-device-width : 667px) and (orientation : landscape) { 
-	.header_cell
-	{
-		font-size: 28px;
-	}
-}
-
-/*iPhone 6 in portrait*/
-@media only screen and (min-device-width : 375px) and (max-device-width : 667px) and (orientation : portrait){
-	.header
-	{
-		display:none;
-	}
-	.header_mobile
-	{
-		top:20px;
-		width: calc(100% - 20px);
-		text-align: right;
-		position:fixed;
-		padding: 0 10px;
-		display:block;
-	}
-	.header_cell
-	{
-		font-size: 35px;
-	}
-	.header_cell > input
-	{
-		width: 350px;
-	}
-}
-
-/*iPhone 6+ in landscape*/
-@media only screen and (min-device-width : 414px) and (max-device-width : 736px) and (orientation : landscape) { 
-	.header_cell
-	{
-		font-size: 28px;
-	}
-}
-
-/*iPhone 6+ in portrait*/
-@media only screen and (min-device-width : 414px) and (max-device-width : 736px) and (orientation : portrait){
-	.header
-	{
-		display:none;
-	}
-	.header_mobile
-	{
-		top:20px;
-		width: calc(100% - 20px);
-		text-align: right;
-		position:fixed;
-		padding: 0 10px;
-		display:block;
-
-	}
-	.header_cell
-	{
-		font-size: 35px;
-	}
-
-
-}

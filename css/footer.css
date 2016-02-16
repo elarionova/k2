@@ -48,7 +48,7 @@
 {
 	opacity:1;
 	transition: opacity 0.5s linear;
-	right:50px;
+	right:10px;
 }
 div.feedback_wrapper
 {
@@ -61,20 +61,15 @@ div.feedback_wrapper
 	width:200px;
 	height:150px;
 
+
 }
 div.feedback
 {
 	position:absolute;
 	font-size: 150%;
-	right:0;
+	right:30;
 	bottom:5;
-	/*bottom:0px;
-	right:-9999px;
-	z-index: -1;
 
-	opacity:0;
-	transition: opacity 0.5s linear;
-*/	
 }
 .feedback>input
 {
@@ -126,6 +121,17 @@ div.sm_icon
 div.sm_icon:last-child
 {
 	margin-right: 0px;
+}
+
+
+@media screen and (max-width: 350px)
+{
+	
+
+	.footer_cell
+	{
+		font-size: 90%;
+	}
 }
 
 /*iPad in portrait*/

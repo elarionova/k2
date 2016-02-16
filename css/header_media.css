@@ -1,4 +1,4 @@
-@media (max-width: 450px), (max-device-width: 1023px) and (orientation : portrait)
+@media (max-width: 500px), (max-device-width: 1023px) and (orientation : portrait)
 {
 	.search_input>input
 	{
@@ -6,7 +6,7 @@
 	}
 	.header
 	{
-		padding:0;
+		/*padding:0;*/
 	}
 	.header_cell
 	{
@@ -14,13 +14,65 @@
 	}
 	div.login_hidden_block
 	{
-		right:120px;
+		right:140px;
 	}
 	div.login_block
 	{
 		width:250px;
 	}
+
+.header_wrapper
+	{
+		height:120px;
+		top:-40;
+
+	}
+
+
 }
+
+@media (max-width: 350px)
+{
+	.search_input>input
+	{
+		width:50px;
+	}
+	div.login_hidden_block
+	{
+		right:90px;
+	}
+	div.login_block
+	{
+		right: -45px;
+	}
+}
+
+
+
+@media (max-width: 830px), (max-device-width: 1023px) and (orientation : portrait)
+{
+	.user_name
+	{
+		display:none;
+
+	}	
+}
+
+@media (max-width: 620px)
+{
+	.long_logo
+	{
+		display:none;
+	}
+
+	.short_logo
+	{
+		display: inline-block;
+	}
+
+}
+
+
 /*
 	.header_cell:last-child:hover .search_hidden_block
 	{
@@ -29,3 +81,11 @@
 	}
 }
 */
+
+@media (max-device-width: 1023px)
+{
+	.signup_input
+	{
+		width:220px;
+	}
+}
