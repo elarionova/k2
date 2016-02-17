@@ -82,7 +82,7 @@ input,textarea
 	width:200px;
 }
 
-div.button
+div.button, .button_disable
 {
 	width:198px;
 	background-color: rgba(255,255,255,0.5);
@@ -94,11 +94,42 @@ div.button
 	font-weight: 600;
 }
 
+.button_disable
+{
+	cursor:default;
+	color: #6E797D;
+	border: 1px solid #6E797D;
+	font-weight: 400;
+	background-color: rgba(210,210,210,0.5);
+
+}
+
 div.button:hover
 {
 	border:1px solid #46A5E5;
 	color:#46A5E5;
 
+}
+.status_message
+{
+	font-weight: 300;
+	font-style: italic;
+	padding-left: 20px;
+}
+
+.green
+{
+	color: green;
+}
+
+.red
+{
+	color: red;
+}
+
+.grey
+{
+	color: #6E797D;
 }
 
 /*iPad in landscape*/
