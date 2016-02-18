@@ -1,0 +1,172 @@
+.feedback_wrapper, .feedback_message_head
+{
+	width: 100%;
+	padding: 0;
+}
+
+.feedback_filter
+{
+	width: calc(100% - 20px);
+	padding: 0px 10px 20px 10px;
+}
+
+.feedback_filter_cell
+{
+	display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+    margin-top: 3px;
+    font-size: 16px;
+
+}
+
+input.date_filter
+{
+	padding: 0;
+	width:150px;
+}
+
+
+.feedback_date_block
+{
+
+	border-top: 1px solid #000;
+	/*border-bottom: 1px solid #000;*/
+	padding: 10px;
+
+}
+
+.feedback_date
+{
+	margin-top: -20px;
+	border: 1px solid #000;
+	background-color: #fff;
+	width: 100px;
+	text-align: center;
+
+}
+
+.feedback_message
+{
+
+	margin: 10px 0;
+	background-color: rgba(255, 255, 255, 1);
+	width: 80%;
+	margin-left: 10%;
+	border-radius:5px;
+	border: 1px solid #e1e1e1;
+
+}
+
+.new
+{
+	background-color: rgba(204, 29, 29, 0.5);
+}
+
+.answered
+{
+	background-color: rgba(33, 191, 62, 0.5);
+}
+
+.feedback_message_head
+{
+	padding: 10px;
+	font-weight: 400;
+	cursor:pointer;
+	width: calc(100% - 20px);
+	border-radius: 5px 5px 0px 0px;
+
+}
+
+.feedback_email, .feedback_subject
+{
+	display:inline-block;
+	vertical-align: middle;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	max-width: 30%;
+}
+
+.feedback_subject
+{
+	max-width: 65%;
+	font-weight: 600;
+}
+
+.feedback_message_body
+{
+	max-height: 0px;
+	transition: max-height linear 0.5s;
+	transition: opacity linear 0.2s;
+	position:relative;
+	opacity:0;
+	overflow: auto;
+	width: 100%;
+	border-radius: 0px 0px 5px 5px;
+
+
+}
+
+.expand
+{
+	max-height: 300px;
+	transition: max-height linear 0.2s;
+	transition: opacity linear 0.5s;	
+	opacity: 1;
+}
+
+.moderator_message, .user_message
+{
+	width: 70%;
+	display: block;
+	margin: 10px 5px;
+	float: right;
+	text-align: right;
+	padding:3px;
+	color: green;
+	font-style: italic;
+}
+
+.user_message
+{
+	float: left;
+	text-align: left;
+	font-weight: 400;
+	color: #0F2B80;
+	font-style: normal;
+}
+.message_date 
+{
+	font-weight: 300;
+	font-size: 14px;
+	color: #6E797D;
+}
+
+.message_date:after
+{
+	content:" ";
+}
+
+.attach_link
+{
+	display: block;
+	font-size: 14px;
+}
+
+.reply_wrapper
+{
+	width: 100%;
+	text-align: right;
+	font-size: 18px;
+	padding: 5px 0px;
+
+}
+
+.for_reply
+{
+	width:60%;
+	display:block;
+	margin: 1% 20%;
+}
+

@@ -14,6 +14,7 @@ body
 	background-color: #FFFFFF;
 	/*min-width: 360px;*/
 	width:100%;
+	background-image: url("i/background1.png");
 
 }
 h1, h2
@@ -22,7 +23,8 @@ h1, h2
 	font-weight: 300;
 	color:#000000;
 	padding-left: 5%;
-	margin-top:70px;
+	margin-top:0px;
+	top:50;
 
 }
 
@@ -72,7 +74,7 @@ a:hover
 /*	background-repeat: no-repeat;*/
 }
 
-input,textarea
+input,textarea, select
 {
 	background-color: transparent;
 	border:1px solid #000000;
