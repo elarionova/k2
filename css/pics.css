@@ -1,11 +1,12 @@
 .main, .main4, .main5, .main6
 {
 	background-image: url("i/background1.png");
+  background-repeat: repeat;
 /*	background-color: #efefef;*/
 }
 
 .main2, .main3
 {
 	background-image: url("i/background1.png");
-	
+  background-repeat: repeat;
 }

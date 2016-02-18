@@ -1,34 +1,7 @@
-/*
-@media screen and (max-width: 750px)
-{
-	.main_links_cell
-	{
-		display:block;
-	}
-	.main_links
-	{
-		width:100%;
-		top:25%;
-		padding: 0;
-		text-align: center;
-	}
-}
-
-
-@media screen and (max-width: 350px)
-{
-	.main_links
-	{
-		padding-left: 5%;
-		text-align: left;
-	}
-
-}
-*/
 
 @media screen and (max-width: 530px)
 {
-	
+
 	.main_logo
 	{
 		margin-left:3%;
@@ -45,11 +18,10 @@
 
 @media screen and (max-width: 390px)
 {
-	
+
 
 	.main_links_cell>a
 	{
 		font-size: 150%;
 	}
 }
-

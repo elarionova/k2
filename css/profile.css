@@ -27,7 +27,7 @@
 {
 	width: 120px;
 	font-size: 20px;
-	
+
 }
 
 ._form_line_cell:nth-child(2)
@@ -43,16 +43,16 @@
 	padding-left: 5px;
 }
 
-.verification_ok:after 
+.verification_ok:after
 {
 	content:"It's OK!";/*"\2714 Done";*/
 	color: #46A5E5;
 }
 
-.verification_bad:after 
+.verification_bad:after
 {
 	content:"Error";/*\2718 Error";*/
-	color: red;	
+	color: red;
 }
 
 .region_dropdown
@@ -99,7 +99,60 @@ input.tapebutton
 	height:15px;
 }
 
-.tapebutton + label
-{
+@media (max-device-width: 1023px) and (orientation : landscape){
+	._form
+	{
+		margin-bottom: 10px;
+	}
+	.region_dropdown
+	{
+		width: 348px;
+		
+	}
+	._form_line_cell>.button, ._form_line_cell>.button_disable
+	{
+		width: 350px;
+		font-size: 25px;
+		padding: 10px 0px;
+	}
+}
+
+
+@media (max-device-width: 1023px) and (orientation : portrait){
+	._form_line_cell>input
+	{
+		font-size: 30px;
+	}
+
+	._form_line_cell:nth-child(1), ._form_line_cell:nth-child(2), ._form_line_cell:nth-child(3)
+	{
+		font-size: 30px;
+		margin-top: 15px;
+	}
+
+	._form_line_cell:nth-child(1)
+	{
+
+		max-width: 120px;
+		word-wrap: break-word;
+
+	}
+	.status_message
+	{
+		font-size: 30px;
+	}
+	._form_line_cell>.button, ._form_line_cell>.button_disable
+	{
+		width: 500px;
+		font-size: 25px;
+		padding: 10px 0px;
+	}
+
+	.region_dropdown
+	{
+		width: 500px;
+		font-size: 25px;
+	}
+
 
 }

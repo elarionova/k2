@@ -1,13 +1,10 @@
-@media (max-width: 500px), (max-device-width: 1023px) and (orientation : portrait)
+@media (max-width: 500px)/*, (max-device-width: 1023px) and (orientation : portrait)*/
 {
 	.search_input>input
 	{
 		width:100px;
 	}
-	.header
-	{
-		/*padding:0;*/
-	}
+
 	.header_cell
 	{
 		margin-right: 5px;
@@ -19,13 +16,6 @@
 	div.login_block
 	{
 		width:250px;
-	}
-
-.header_wrapper
-	{
-		height:120px;
-		top:-40;
-
 	}
 
 
@@ -45,20 +35,24 @@
 	{
 		right: -45px;
 	}
+	.header_cell
+	{
+		margin-right: 2px;
+	}
 }
 
 
 
-@media (max-width: 830px), (max-device-width: 1023px) and (orientation : portrait)
+@media (max-width: 870px), (max-device-width: 1023px) and (orientation : portrait)
 {
 	.user_name
 	{
 		display:none;
 
-	}	
+	}
 }
 
-@media (max-width: 620px)
+@media (max-width: 680px), (max-device-width: 1023px)
 {
 	.long_logo
 	{
@@ -77,15 +71,31 @@
 	.header_cell:last-child:hover .search_hidden_block
 	{
 		right:20px;
-		
+
 	}
 }
 */
 
 @media (max-device-width: 1023px)
 {
+	.header_cell 
+	{
+		margin-right: 35px;
+	}
 	.signup_input
 	{
-		width:220px;
+		width:60%;
+	}
+	div.login_hidden_block
+	{
+		right:440px;
+	}
+	div.login_block
+	{
+		width:450px;
+	}
+	.search_input>input
+	{
+		width:270px;
 	}
 }

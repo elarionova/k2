@@ -24,7 +24,7 @@
 	vertical-align: middle;
 	cursor:pointer;
 	font-size: 120%;
-	
+
 }
 
 .footer_cell:hover
@@ -60,20 +60,18 @@ div.feedback_wrapper
 	transition: opacity 0.5s linear;
 	width:200px;
 	height:150px;
-
-
 }
+
 div.feedback
 {
 	position:absolute;
 	font-size: 150%;
-	right:30;
-	bottom:5;
-
+	right: 30;
+	bottom: 5;
 }
 .feedback>input
 {
-	font-size: 75%;	
+	font-size: 75%;
 }
 
 
@@ -90,24 +88,24 @@ div.feedback
 	background-color: rgba(255,255,255,0.8);
 }
 
-input[name="user_email"]::-webkit-input-placeholder 
+input[name="user_email"]::-webkit-input-placeholder
 {
     color: #000000;
-} 
-
-input[name="user_email"]::-moz-placeholder 
-{
-    color: #000000;
-    
 }
-textarea[name="user_message"]::-webkit-input-placeholder 
+
+input[name="user_email"]::-moz-placeholder
 {
     color: #000000;
-} 
-textarea[name="user_message"]::-moz-placeholder 
+
+}
+textarea[name="user_message"]::-webkit-input-placeholder
 {
     color: #000000;
-    
+}
+textarea[name="user_message"]::-moz-placeholder
+{
+    color: #000000;
+
 }
 
 div.sm_icon
@@ -116,6 +114,11 @@ div.sm_icon
 	vertical-align: middle;
 	margin-right: 10px;
 	font-size: 20px;
+	width:30px;
+	height: 30px;
+	background-repeat: no-repeat;
+	background-position: center;
+	cursor: pointer;
 }
 
 div.sm_icon:last-child
@@ -124,31 +127,62 @@ div.sm_icon:last-child
 }
 
 
+.footer_fb
+{
+	background-image: url("i/ic_facebook_white_18dp.png");
+}
+.footer_vk
+{
+	background-image: url("i/ic_vk_white_18dp.png");
+}
+.footer_twi
+{
+	background-image: url("i/ic_twitter_white_18dp.png");
+}
+
+.footer_fb:hover
+{
+	background-image: url("i/ic_facebook_blue_18dp.png");
+}
+.footer_vk:hover
+{
+	background-image: url("i/ic_vk_blue_18dp.png");
+}
+.footer_twi:hover
+{
+	background-image: url("i/ic_twitter_blue_18dp.png");
+}
+
 @media screen and (max-width: 350px)
 {
-	
-
 	.footer_cell
 	{
 		font-size: 90%;
 	}
 }
 
-/*iPad in portrait*/
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait){
+
+
+@media (max-device-width: 1023px) and (orientation : portrait){
 	.footer
 	{
 		height:90px;
 	}
 	.footer_wrapper
 	{
-		margin: 25px 10%;
+		margin: 25px 1%;
 	}
 	.footer_cell
 	{
 		font-size: 200%;
-		
+
 	}
+	div.sm_icon
+	{
+		margin-right: 30px;
+		padding-left: 20px;
+	}
+
 	.footer_cell:last-child:hover .feedback
 	{
 		right:70px;
@@ -157,14 +191,14 @@ div.sm_icon:last-child
 	.feedback
 	{
 		bottom:0px;
-		position:relative;
+		position:absolute;
 		right:-999999px;
 		z-index: 999;
 		font-size: 200%;
 	}
 	.feedback>input
 	{
-		font-size: 75%;	
+		font-size: 75%;
 	}
 
 
@@ -187,13 +221,16 @@ div.sm_icon:last-child
 }
 
 
-/*iPad in landscape*/
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) { 
+@media (max-device-width: 1023px) and (orientation : landscape) {
 	.footer_cell:last-child:hover .feedback
 	{
 		right:70px;
 	}
 
+	div.sm_icon
+	{
+		margin-right: 30px;
+	}
 	.feedback
 	{
 		bottom:0px;
@@ -204,7 +241,7 @@ div.sm_icon:last-child
 	}
 	.feedback>input
 	{
-		font-size: 75%;	
+		font-size: 75%;
 	}
 	input,textarea
 	{
@@ -220,431 +257,3 @@ div.sm_icon:last-child
 	}
 }
 
-
-/*Galaxy Note, Galaxy S5 in portrait*/
-@media only screen and (min-device-width : 360px) and (max-device-width : 640px) and (orientation : portrait){
-	.footer
-	{
-		height:90px;
-	}
-	.footer_wrapper
-	{
-		margin: 25px 10%;
-	}
-	.footer_cell
-	{
-		font-size: 200%;
-		
-	}
-	.footer_cell:last-child:hover .feedback
-	{
-		right:70px;
-	}
-
-	.feedback
-	{
-		bottom:0px;
-		position:absolute;
-		right:-999999px;
-		z-index: 999;
-		font-size: 200%;
-	}
-	.feedback>input
-	{
-		font-size: 75%;	
-	}
-
-
-	.feedback>.button
-	{
-		margin-bottom: 95px;
-	}
-	input,textarea
-	{
-		width:500px;
-	}
-	textarea
-	{
-		height:600px;
-	}
-	div.button
-	{
-		width:499px;
-	}
-}
-
-/*Galaxy Note, Galaxy S5 in landscape*/
-@media only screen and (min-device-width : 360px) and (max-device-width : 640px) and (orientation : landscape) { 
-	.footer_cell:last-child:hover .feedback
-	{
-		right:70px;
-	}
-
-	.feedback
-	{
-		bottom:0px;
-		position:absolute;
-		right:-999999px;
-		z-index: 999;
-		font-size: 200%;
-	}
-	.feedback>input
-	{
-		font-size: 75%;	
-	}
-	input,textarea
-	{
-		width: 350px;
-	}
-	textarea
-	{
-		height:400px;
-	}
-	div.button
-	{
-		width:349px;
-	}
-}
-
-/*Nexus 5X in portrait*/
-@media only screen and (min-device-width : 411px) and (max-device-width : 731px) and (orientation : portrait){
-	.footer
-	{
-		height:90px;
-	}
-	.footer_wrapper
-	{
-		margin: 25px 10%;
-	}
-	.footer_cell
-	{
-		font-size: 200%;
-		
-	}
-	.footer_cell:last-child:hover .feedback
-	{
-		right:70px;
-	}
-
-	.feedback
-	{
-		bottom:0px;
-		position:absolute;
-		right:-999999px;
-		z-index: 999;
-		font-size: 200%;
-	}
-	.feedback>input
-	{
-		font-size: 75%;	
-	}
-
-
-	.feedback>.button
-	{
-		margin-bottom: 95px;
-	}
-	input,textarea
-	{
-		width:500px;
-	}
-	textarea
-	{
-		height:600px;
-	}
-	div.button
-	{
-		width:499px;
-	}
-}
-
-/*Nexus 5X in landscape*/
-@media only screen and (min-device-width : 411px) and (max-device-width : 731px) and (orientation : landscape) { 
-	.footer_cell:last-child:hover .feedback
-	{
-		right:70px;
-	}
-
-	.feedback
-	{
-		bottom:0px;
-		position:absolute;
-		right:-999999px;
-		z-index: 999;
-		font-size: 200%;
-	}
-	.feedback>input
-	{
-		font-size: 75%;	
-	}
-	input,textarea
-	{
-		width: 350px;
-	}
-	textarea
-	{
-		height:400px;
-	}
-	div.button
-	{
-		width:349px;
-	}
-}
-
-/*iPhone 5 in portrait*/
-@media only screen and (min-device-width : 320px) and (max-device-width : 568px) and (orientation : portrait){
-	.footer
-	{
-		height:90px;
-	}
-	.footer_wrapper
-	{
-		margin: 25px 10%;
-	}
-	.footer_cell
-	{
-		font-size: 200%;
-		
-	}
-	.footer_cell:last-child:hover .feedback
-	{
-		right:70px;
-	}
-
-	.feedback
-	{
-		bottom:0px;
-		position:absolute;
-		right:-999999px;
-		z-index: 999;
-		font-size: 200%;
-	}
-	.feedback>input
-	{
-		font-size: 75%;	
-	}
-
-
-	.feedback>.button
-	{
-		margin-bottom: 95px;
-	}
-	input,textarea
-	{
-		width:500px;
-	}
-	textarea
-	{
-		height:600px;
-	}
-	div.button
-	{
-		width:499px;
-	}
-
-
-
-}
-
-/*iPhone 5 in landscape*/
-@media only screen and (min-device-width : 320px) and (max-device-width : 568px) and (orientation : landscape) { 
-	.footer_cell:last-child:hover .feedback
-	{
-		right:70px;
-	}
-
-	.feedback
-	{
-		bottom:0px;
-		position:absolute;
-		right:-999999px;
-		z-index: 999;
-		font-size: 200%;
-	}
-	.feedback>input
-	{
-		font-size: 75%;	
-	}
-	input,textarea
-	{
-		width: 350px;
-	}
-	textarea
-	{
-		height:350px;
-	}
-	div.button
-	{
-		width:349px;
-	}
-}
-
-/*iPhone 6 in portrait*/
-@media only screen and (min-device-width : 375px) and (max-device-width : 667px) and (orientation : portrait){
-	.footer
-	{
-		height:90px;
-	}
-	.footer_wrapper
-	{
-		margin: 25px 10%;
-	}
-	.footer_cell
-	{
-		font-size: 200%;
-		
-	}
-	.footer_cell:last-child:hover .feedback
-	{
-		right:70px;
-	}
-
-	.feedback
-	{
-		bottom:0px;
-		position:absolute;
-		right:-999999px;
-		z-index: 999;
-		font-size: 200%;
-	}
-	.feedback>input
-	{
-		font-size: 75%;	
-	}
-
-
-	.feedback>.button
-	{
-		margin-bottom: 95px;
-	}
-	input,textarea
-	{
-		width:500px;
-	}
-	textarea
-	{
-		height:600px;
-	}
-	div.button
-	{
-		width:499px;
-	}
-}
-
-/*iPhone 6 in landscape*/
-@media only screen and (min-device-width : 375px) and (max-device-width : 667px) and (orientation : landscape) { 
-	.footer_cell:last-child:hover .feedback
-	{
-		right:70px;
-	}
-
-	.feedback
-	{
-		bottom:0px;
-		position:absolute;
-		right:-999999px;
-		z-index: 999;
-		font-size: 200%;
-	}
-	.feedback>input
-	{
-		font-size: 75%;	
-	}
-	input,textarea
-	{
-		width: 350px;
-	}
-	textarea
-	{
-		height:350px;
-	}
-	div.button
-	{
-		width:349px;
-	}
-}
-
-/*iPhone 6+ in portrait*/
-@media only screen and (min-device-width : 414px) and (max-device-width : 736px) and (orientation : portrait){
-	.footer
-	{
-		height:90px;
-	}
-	.footer_wrapper
-	{
-		margin: 25px 10%;
-	}
-	.footer_cell
-	{
-		font-size: 200%;
-		
-	}
-	.footer_cell:last-child:hover .feedback
-	{
-		right:70px;
-	}
-
-	.feedback
-	{
-		bottom:0px;
-		position:absolute;
-		right:-999999px;
-		z-index: 999;
-		font-size: 200%;
-	}
-	.feedback>input
-	{
-		font-size: 75%;	
-	}
-
-
-	.feedback>.button
-	{
-		margin-bottom: 95px;
-	}
-	input,textarea
-	{
-		width:500px;
-	}
-	textarea
-	{
-		height:600px;
-	}
-	div.button
-	{
-		width:499px;
-	}
-}
-
-/*iPhone 6+ in landscape*/
-@media only screen and (min-device-width : 414px) and (max-device-width : 736px) and (orientation : landscape) { 
-	.footer_cell:last-child:hover .feedback
-	{
-		right:70px;
-	}
-
-	.feedback
-	{
-		bottom:0px;
-		position:absolute;
-		right:-999999px;
-		z-index: 999;
-		font-size: 200%;
-	}
-	.feedback>input
-	{
-		font-size: 75%;	
-	}
-	input,textarea
-	{
-		width: 350px;
-	}
-	textarea
-	{
-		height:350px;
-	}
-	div.button
-	{
-		width:349px;
-	}
-}

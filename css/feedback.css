@@ -112,7 +112,7 @@ input.date_filter
 {
 	max-height: 300px;
 	transition: max-height linear 0.2s;
-	transition: opacity linear 0.5s;	
+	transition: opacity linear 0.5s;
 	opacity: 1;
 }
 
@@ -136,7 +136,7 @@ input.date_filter
 	color: #0F2B80;
 	font-style: normal;
 }
-.message_date 
+.message_date
 {
 	font-weight: 300;
 	font-size: 14px;
@@ -168,5 +168,40 @@ input.date_filter
 	width:60%;
 	display:block;
 	margin: 1% 20%;
+}
+
+
+@media (max-device-width: 1023px) 
+{
+	div.feedback_date
+	{
+		font-size: 30px;
+		width: 140px;
+		margin-top: -25px;
+
+	}
+
+	.feedback_filter_cell
+	{
+		font-size: 25px;
+	}
+
+	.feedback_date_block
+	{
+		margin-top: 20px;
+	}
+	.feedback_message
+	{
+		font-size: 25px;
+	}
+	.attach_link
+	{
+		font-size: 20px;
+	}
+
+	.for_reply
+	{
+		font-size: 35px;
+	}
 }
 
