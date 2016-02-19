@@ -34,7 +34,7 @@ div.main_logo
 	text-align: justify;
 	bottom:70px;
 	position:absolute;
-	
+	-webkit-user-select: none;
 	
 }
 

@@ -25,11 +25,13 @@ div.arrows
 a.next
 {
 	float:right;
+	-webkit-user-select: none;
 }
 
 a.prev
 {
 	float:left;	
+	-webkit-user-select: none;
 }
 
 p.news_about

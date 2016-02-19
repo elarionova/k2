@@ -119,6 +119,7 @@ div.sm_icon
 	background-repeat: no-repeat;
 	background-position: center;
 	cursor: pointer;
+	-webkit-user-select: none;
 }
 
 div.sm_icon:last-child

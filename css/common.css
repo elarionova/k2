@@ -67,6 +67,7 @@ a:hover
 	background-position: top;
 	width: 100%;
 	min-width: 360px;
+	padding-bottom: 60px;
 }
 
 input,textarea,select
@@ -89,6 +90,7 @@ div.button, .button_disable
 	cursor:pointer;
 	color: #000000;
 	font-weight: 600;
+	-webkit-user-select: none;
 }
 
 .button_disable
@@ -127,5 +129,12 @@ div.button:hover
   color: #6E797D;
 }
 
+@media (max-device-width: 1023px) 
+{
+	div.content
+	{
+		padding-bottom: 90px;
+	}
 
+}
 
