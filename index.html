@@ -2,6 +2,7 @@
 	<head>
 		<link href='https://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,900italic,900,700italic,700,500italic,500,400italic' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" type="text/css" href="css/common.css">
+		<link rel="stylesheet" type="text/css" href="css/admin.css">
 		<link rel="stylesheet" type="text/css" href="css/pics.css">
 		<link rel="stylesheet" type="text/css" href="css/main.css">
 		<link rel="stylesheet" type="text/css" href="css/turner.css">
@@ -206,11 +207,38 @@
 			<div class="content main2" id="services">
 				<h1>Services</h1>	
 				<div class="gallery">
+					<div class="gallery_cell for_admin">
+
+						<div class="admin_wrapper for_admin">
+							<div class="admin_wrapper_cell admin_save"></div>
+							<div class="admin_wrapper_cell admin_delete"></div>
+							<div class="admin_wrapper_cell admin_publish"></div>
+						</div>
+
+						<input placeholder="New item title" class="admin_new_element for_admin">
+						<textarea placeholder="New item description" class=" admin_new_element for_admin"></textarea>
+						<input placeholder="New item link" class="admin_new_element for_admin">
+						<input placeholder="Number of this item" class="admin_new_element for_admin">
+
+
+					</div>
 					<div class="gallery_cell">
+						<div class="status_label for_admin">Non-published!</div>
+						<div class="admin_wrapper for_admin">
+							<div class="admin_wrapper_cell admin_edit"></div>
+							<div class="admin_wrapper_cell admin_delete"></div>
+							<div class="admin_wrapper_cell admin_publish"></div>
+						</div>
+
 						<h3>Cuisine Constructor</h3>
 						<p>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ipsum augue, imperdiet tincidunt ullamcorper a, auctor eget urna. Vestibulum sodales.</p>
 					</div>
 					<div class="gallery_cell">
+						<div class="admin_wrapper for_admin">
+							<div class="admin_wrapper_cell admin_edit for_admin"></div>
+							<div class="admin_wrapper_cell admin_delete for_admin"></div>
+							<div class="admin_wrapper_cell admin_hide for_admin"></div>
+						</div>
 						<h3>Cuisine Constructor</h3>
 					</div>
 					<div class="gallery_cell">
@@ -281,13 +309,39 @@
 			<div class="content main4" id="news">
 				<h1>News</h1>
 				<div class="news_block">
+				
 					<div class="news_block_cell">
+						<input placeholder="New item title" class="admin_new_element for_admin">
+						<input type="date" class="admin_new_element for_admin">
+						<textarea placeholder="New item preview" class=" admin_new_element for_admin"></textarea>
+						<textarea placeholder="New item text" class=" admin_new_element for_admin"></textarea>
+						
+						<input placeholder="Number of this item" class="admin_new_element for_admin">
+						<div class="admin_wrapper for_admin">
+							<div class="admin_wrapper_cell admin_save"></div>
+							<div class="admin_wrapper_cell admin_delete"></div>
+							<div class="admin_wrapper_cell admin_publish"></div>
+						</div>
+					</div>
+
+
+
+
+
+					<div class="news_block_cell">
+						<div class="status_label for_admin">Non-published!</div>
+						<div class="admin_wrapper for_admin">
+							<div class="admin_wrapper_cell admin_edit"></div>
+							<div class="admin_wrapper_cell admin_delete"></div>
+							<div class="admin_wrapper_cell admin_publish"></div>
+						</div>
 						<h3>News #1</h3>
 						<div class="date">
 							12.08.2015
 						</div>
 						<p class=="preview">Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ipsum augue, imperdiet tincidunt ullamcorper a, auctor eget urna. Vestibulum sodales.</p>
 					</div>
+
 					<div class="news_block_cell">
 						<h3>News #2</h3>
 						<div class="date">
@@ -321,6 +375,18 @@
 				<h1>About</h1>
 				<p class="about">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut venenatis enim ut arcu malesuada pretium. Vivamus eleifend semper urna, consectetur lacinia ligula imperdiet vel. Pellentesque condimentum a lacus in mollis. Mauris aliquam, eros sed congue tincidunt, lorem lectus cursus erat, malesuada maximus lorem libero et lacus. Aliquam justo erat, ullamcorper.</p>
 				<p class="about">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut venenatis enim ut arcu malesuada pretium. Vivamus eleifend semper urna, consectetur lacinia ligula imperdiet vel. Pellentesque condimentum a lacus in mollis. Mauris aliquam, eros sed congue tincidunt, lorem lectus cursus erat, malesuada maximus lorem libero et lacus. Aliquam justo erat, ullamcorper.</p>
+				<div class="edit_container for_admin">
+					<div class="admin_wrapper for_admin">
+							<div class="admin_wrapper_cell admin_save"></div>
+							<div class="admin_wrapper_cell admin_delete"></div>
+							<div class="admin_wrapper_cell admin_publish"></div>
+						</div>
+
+						<input placeholder="New item title" class="admin_new_element for_admin">
+						<textarea placeholder="New item description" class=" admin_new_element for_admin"></textarea>
+						<input placeholder="Number of this item" class="admin_new_element for_admin">
+
+				</div>
 
 			</div>
 

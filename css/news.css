@@ -16,6 +16,7 @@
 	height:50%;
 	overflow: hidden;
 	cursor: pointer;
+	position: relative;
 }
 
 .news_block_cell:hover
@@ -47,7 +48,7 @@ div.date
 	.news_block_cell
 	{
 		font-size:110%;
-		height:55%;
+		height:380px;
 	}
 }
 
@@ -57,7 +58,7 @@ div.date
 		display: block;
 		width:90%;
 		margin: 1% 1%;
-		height:425px;
+		max-height:455px;
 		font-size: 200%;
 	}
 }
