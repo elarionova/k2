@@ -1,4 +1,4 @@
-div.turner
+.turner
 {
 	right:0;
 	width:35px;
@@ -8,14 +8,14 @@ div.turner
 	z-index: 1;
 }
 
-div.turner_element
+.turner_element
 {
 	height:27px;
 	width:27px;
 	padding-top:5px;
 }
 
-div.turner_element_inactive
+.turner_element_inactive
 {
   background-position: right;
 	background-image: url("i/ic_checkbox_blank_circle_outline_black_18dp.png");
@@ -24,7 +24,7 @@ div.turner_element_inactive
   opacity:0.8;
 }
 
-div.turner_element_active
+.turner_element_active
 {
 	background-position: right;
 	background-image: url("i/ic_checkbox_blank_circle_black_18dp.png");
@@ -34,17 +34,42 @@ div.turner_element_active
 	z-index: 1;
 }
 
-div.turner_element:hover
+.turner_element:hover
 {
 	opacity:1;
 }
 
-/*iPad in landscape*/
+
+@max-device-width:1023px and (orientation:portrait) 
+{ 
+	div.turner_element>a 
+	{ 
+	height:40px; 
+	width:40px; 
+
+	} 
+
+	div.turner_element_active>a 
+	{ 
+		height:40px; 
+		width:40px; 
+		background-image: url("i/ic_checkbox_blank_circle_black_36dp.png"); 
+	} 
+
+	div.turner_element_inactive>a 
+	{ 
+		height:40px; 
+		width:40px; 
+		background-image: url("i/ic_checkbox_blank_circle_outline_black_36dp.png"); 
+	} 
+
+}
+/*
+
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
 
 }
 
-/*iPad in portrait*/
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait){
 	div.turner
 	{
@@ -72,12 +97,10 @@ div.turner_element:hover
 }
 
 
-/*Galaxy Note, Galaxy S5 in landscape*/
 @media only screen and (min-device-width : 360px) and (max-device-width : 640px) and (orientation : landscape) {
 
 }
 
-/*Galaxy Note, Galaxy S5 in portrait*/
 @media only screen and (min-device-width : 360px) and (max-device-width : 640px) and (orientation : portrait){
 	div.turner
 	{
@@ -104,12 +127,10 @@ div.turner_element:hover
 
 }
 
-/*Nexus 5X in landscape*/
 @media only screen and (min-device-width : 411px) and (max-device-width : 731px) and (orientation : landscape) {
 
 }
 
-/*Nexus 5X in portrait*/
 @media only screen and (min-device-width : 411px) and (max-device-width : 731px) and (orientation : portrait){
 	div.turner
 	{
@@ -137,12 +158,10 @@ div.turner_element:hover
 }
 
 
-/*iPhone 5 in landscape*/
 @media only screen and (min-device-width : 320px) and (max-device-width : 568px) and (orientation : landscape) {
 
 }
 
-/*iPhone 5 in portrait*/
 @media only screen and (min-device-width : 320px) and (max-device-width : 568px) and (orientation : portrait){
 	div.turner
 	{
@@ -169,12 +188,10 @@ div.turner_element:hover
 
 }
 
-/*iPhone 6 in landscape*/
 @media only screen and (min-device-width : 375px) and (max-device-width : 667px) and (orientation : landscape) {
 
 }
 
-/*iPhone 6 in portrait*/
 @media only screen and (min-device-width : 375px) and (max-device-width : 667px) and (orientation : portrait){
 	div.turner
 	{
@@ -201,12 +218,10 @@ div.turner_element:hover
 
 }
 
-/*iPhone 6+ in landscape*/
 @media only screen and (min-device-width : 414px) and (max-device-width : 736px) and (orientation : landscape) {
 
 }
 
-/*iPhone 6+ in portrait*/
 @media only screen and (min-device-width : 414px) and (max-device-width : 736px) and (orientation : portrait){
 	div.turner
 	{
@@ -232,3 +247,4 @@ div.turner_element:hover
 	}
 
 }
+*/

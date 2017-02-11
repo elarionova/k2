@@ -80,7 +80,7 @@ input,textarea,select
 	width:200px;
 }
 
-div.button, .button_disable
+div.button
 {
 	width:198px;
 	background-color: rgba(255,255,255,0.5);
@@ -96,11 +96,16 @@ div.button, .button_disable
 .button_disable
 {
   cursor: default;
+  width:198px;
   color: #6E797D;
+  font-size: 100%;
   border: 1px solid #6E797D;;
   font-weight: 400;
+  text-align: center;
   background-color: rgba(210,210,210,0.5);
+  -webkit-user-select: none;
 }
+
 div.button:hover
 {
 	border:1px solid #46A5E5;
