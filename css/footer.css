@@ -126,6 +126,17 @@ textarea[name="user_message"]::-moz-placeholder
 	text-align: center;
 }
 
+.feedback_error_message
+{
+	position: absolute;
+	bottom: 96px;
+	background-color: rgba(256, 256, 256, 0.8);
+	padding-left: 10px;
+	width: 188px;/*200px feedback_wrapper - 10 padding ps - 2*1px of borders*/
+	
+	border-left: 1px solid black;
+	/*border-right: 1px solid black;*/
+}
 div.sm_icon
 {
 	display: inline-block;
@@ -237,9 +248,14 @@ div.sm_icon:last-child
 	
 	.feedback_status
 	{
-	height: 349px;
-	width: 499px;
-	margin-bottom: 90px;
+		height: 349px;
+		width: 499px;
+		margin-bottom: 90px;
+	}
+	.feedback_error_message
+	{
+		bottom: 161px;
+		width: 448px;
 	}
 }
 
@@ -283,6 +299,11 @@ div.sm_icon:last-child
 	height: 349px;
 	width: 349px;
 	
+	}
+
+	.feedback_error_message {
+    	
+    	width: 348px;
 	}
 }
 

@@ -119,6 +119,13 @@ div.button:hover
   padding-left: 20px;
 }
 
+.hint
+{
+	font-weight: 300;
+	font-style: italic;
+	font-size: 60%;
+}
+
 .green
 {
   color: green;
